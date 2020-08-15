@@ -318,7 +318,7 @@ void worstswap(void* a, void* b, unsigned int size){
     // now swap the bits one by one
     while (size)
     {
-        size = add(size, addinverse(1));
+        size = size - 1;
         swap8b(&x[size], &y[size]);
     }
 }
